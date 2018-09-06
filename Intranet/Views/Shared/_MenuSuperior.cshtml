@@ -1,0 +1,58 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="@Url.Action("Index","Home")">Intranet ABC</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+
+                    @* <a class="nav-link" href="@Url.Action("Gina","Premios")"> Gina
+
+                            <span class="sr-only">(current)</span>
+
+                        </a>*@
+                    <a class="nav-link" href="http://gina.abc.org.br" target="_blank">Gina</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="@Url.Action("Index","Premios")">Prêmios</a>
+
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="@Url.Action("Index","Funcionarios")">Funcionários</a>
+
+                </li>
+                <li>
+                    <div class="dropdown show">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Agendas</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-text" href="http://gina.abc.org.br/agenda.htm">Agenda ABC</a>
+                            <a class="dropdown-item" href="http://gina.abc.org.br/atividades_2018.html">Agenda de Atividades</a>
+                            <a class="dropdown-item" href="http://gina.abc.org.br/agenda_presidente.htm">Agenda do Presidente</a>
+                            @*<div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>*@
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>

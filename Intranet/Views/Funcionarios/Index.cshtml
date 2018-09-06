@@ -1,0 +1,37 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="listagemDeFuncionarios"></div>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(configurarControles);
+
+        function configurarControles() {
+
+            $("#listagemDeFuncionarios").load("@Url.Action("Listar")");
+        }
+
+        var pagina = 1;
+
+        function paginar(valor) {
+            var paginaNova = pagina + valor;
+            $("#listagemDeFuncionarios").load("@Url.Action("Listar")", { pagina: paginaNova });
+            pagina = paginaNova;
+        }
+
+    </script>
+
+
+}

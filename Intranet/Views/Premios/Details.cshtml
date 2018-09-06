@@ -1,0 +1,66 @@
+﻿@model Intranet.Models.Premio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Premio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Indicados)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Indicados)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Laureados)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Laureados)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instituicao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instituicao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PR)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
